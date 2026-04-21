@@ -32,8 +32,8 @@ public class Practice {
   }
   
 
-  // Time Complexity: 
-  // Space Complexity: 
+  // Time Complexity: O(n) where n is the array size
+  // Space Complexity: O(n) where n is the amount of values in an array
   // Remember to define your variables!
   public static <T> Map<T, Integer> countFrequencies(T[] array) {
     Map<T, Integer> frequencies = new HashMap<>();
@@ -54,8 +54,8 @@ public class Practice {
     return evens;
   }
 
-  // Time Complexity:
-  // Space Complexity:
+  // Time Complexity: O(n * e) where n is number of map entries multiplied by e representing entries in the inner list
+  // Space Complexity: O(n^2) where n = entries in map
   // Remember to define your variables!
   public static List<Integer> concatVals(Map<Integer, List<Integer>> map) {
     List<Integer> result = new ArrayList<>();
@@ -79,8 +79,8 @@ public class Practice {
     return result;
   }
 
-  // Time Complexity:
-  // Space Complexity:
+  // Time Complexity: O(n) iterating creation of columns where n equals number of rows
+  // Space Complexity: (r * c) where r equals rows and c equals columns
   // Remember to define your variables!
   public static char[][] initCharRect(int rows, int cols) {
     return new char[rows][cols];
@@ -101,8 +101,8 @@ public class Practice {
     return concat;
   }
 
-  // Time Complexity:
-  // Space Complexity: 
+  // Time Complexity: O(1), no output calculation time changes based on input
+  // Space Complexity: O(1), no new memory for new variables reserved
   // Remember to define your variables!
   public static int cubic(int n, int a, int b, int c, int d) {
     int result = d;
