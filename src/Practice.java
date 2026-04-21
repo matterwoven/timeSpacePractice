@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Practice {
 
-  // Time Complexity:
-  // Space Complexity:
+  // Time Complexity: O(n) where n is array.length
+  // Space Complexity: O(n) where n is array.length
   // Remember to define your variables!
   public static List<Integer> findEvens(int[] array) {
     List<Integer> evens = new ArrayList<>();
