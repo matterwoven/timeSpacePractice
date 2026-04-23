@@ -172,6 +172,7 @@ public class Practice {
     // TODO: Complete this method with an implementation that runs
     // in O(1) space.
     int highestNum = 0;
+    int highestNumCount = 0;
     int currentCount = 0;
     for(int num : nums){
       for(int inner : nums){
@@ -179,8 +180,9 @@ public class Practice {
           currentCount++;
         }
       }
-      if(currentCount > highestNum){
+      if(currentCount > highestNumCount){
         highestNum = num;
+        highestNumCount = currentCount;
       }
       currentCount = 0;
     }

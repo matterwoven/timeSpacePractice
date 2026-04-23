@@ -40,7 +40,12 @@ public class PracticeTest {
  }
 
  @Test
-  public void testIfManySmallNumbers(){
+  public void testIfManySmallNumbersShuffled(){
+    Practice test = new Practice();
+    int[] testArr = {9, 3, 3, 1, 2, 2, 3, 2, 3, 5, 5, 5, 5, 1, 9, 1, 1, 1, 4, 5};
 
+    int actual = test.mostCommonSpaceEfficient(testArr);
+
+    assertEquals(1, actual);
   }
 }
