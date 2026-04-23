@@ -39,4 +39,8 @@ public class PracticeTest {
  assertEquals(2, actual);
  }
 
+ @Test
+  public void testIfManySmallNumbers(){
+
+  }
 }
