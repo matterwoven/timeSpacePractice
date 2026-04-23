@@ -48,4 +48,14 @@ public class PracticeTest {
 
     assertEquals(1, actual);
   }
+
+  @Test
+    public void testIfNegativesShuffled(){
+      Practice test = new Practice();
+      int[] testArr = {-3, -3, -3, -1, -2, -2, -1, -1, -2, -9, 5, -1};
+
+      int actual = test.mostCommonSpaceEfficient(testArr);
+
+      assertEquals(-1, actual);
+    }
 }
