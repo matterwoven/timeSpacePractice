@@ -88,8 +88,8 @@ public class Practice {
 
   // Assume all strings in strs are of length s
   // Hint: charAt is an O(1) operation in both time and space
-  // Time Complexity:
-  // Space Complexity:
+  // Time Complexity: O(n) n = strs.length
+  // Space Complexity O(n) n = concat.size(), concat grows n times 
   // Remember to define your variables!
   public static List<Character> concatStrings(List<String> strs) {
     List<Character> concat = new ArrayList<>();
@@ -129,9 +129,28 @@ public class Practice {
    * @return the integer that shows up most commonly
    */
   public static int mostCommonTimeEfficient(int[] nums) {
+    Map<Integer,Integer> map = new HashMap<>();
+    int mostFreq = 0;
+    int target = 0;
+
+    for (int num : nums) {
+      if (!map.containsKey(num)) {
+        map.put(num, 1);
+      } else {
+        map.put(num, map.get(num) + 1);
+      }
+    }
+
+    for (int num : map.keySet()) {
+      int frequency = map.get(num);
+      if (frequency > mostFreq){
+        mostFreq = frequency;
+        target = num;
+      }
+    }
+    return target;
     // TODO: Complete this method with an implementation that runs
     // in O(n) time. n = nums.length
-    return -1;
   }
 
   /**
