@@ -43,8 +43,8 @@ public class Practice {
     return frequencies;
   }
 
-  // Time Complexity: 
-  // Space Complexity: 
+  // Time Complexity: 0(n^2) where n is the int parameter input 
+  // Space Complexity: O(n^2) where n = int parameter input, space grows as list is stored n^2
   // Remember to define your variables!
   public static List<Integer> evensToSquare(int n) {
     List<Integer> evens = new ArrayList<>();
