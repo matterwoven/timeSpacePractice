@@ -25,5 +25,18 @@ public class PracticeTest {
   // Assert
  assertEquals(2, actual);
  }
+ @Test
+  public void testIfFirstCaseMatchIsReturned(){
+    
+  // Arrange 
+  Practice test = new Practice();
+  int[] testArr = {1, 2, 2, 2, 4, 5, 5, 5};
+
+  // act
+  int actual = test.mostCommonTimeEfficient(testArr);
+
+  // Assert
+ assertEquals(2, actual);
+ }
 
 }
